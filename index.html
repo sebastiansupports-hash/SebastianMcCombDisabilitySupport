@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -15,47 +14,56 @@ box-sizing:border-box;
 }
 
 body{
-font-family:Arial, sans-serif;
+font-family:Arial,sans-serif;
+background:#f8fafc;
 color:#222;
 line-height:1.6;
 }
 
 .hero{
-background:#0f3d63;
-color:white;
-padding:50px 20px;
+background:white;
+padding:60px 25px;
+border-bottom:1px solid #e5e7eb;
 }
 
 .hero-inner{
 max-width:1100px;
 margin:auto;
 display:grid;
-grid-template-columns:320px 1fr;
-gap:40px;
+grid-template-columns:350px 1fr;
+gap:50px;
 align-items:center;
 }
 
-.hero img{
+.hero-photo img{
 width:100%;
 border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,.25);
+box-shadow:0 10px 30px rgba(0,0,0,.15);
 }
 
-.hero h1{
+.hero-text h1{
 font-size:3rem;
 line-height:1.1;
 margin-bottom:15px;
+color:#0f3d63;
 }
 
-.hero p{
-font-size:1.15rem;
+.hero-text h2{
+font-size:1.2rem;
+font-weight:normal;
 margin-bottom:20px;
+color:#555;
+}
+
+.hero-text p{
+margin-bottom:20px;
+font-size:1.05rem;
 }
 
 .btn{
 display:inline-block;
 padding:14px 24px;
-border-radius:50px;
+border-radius:40px;
 text-decoration:none;
 font-weight:bold;
 margin-right:10px;
@@ -63,19 +71,19 @@ margin-top:10px;
 }
 
 .call{
-background:white;
-color:#0f3d63;
+background:#0f3d63;
+color:white;
 }
 
 .email{
-background:#2f6ea8;
-color:white;
+background:#e5e7eb;
+color:#0f3d63;
 }
 
 .section{
 max-width:1100px;
 margin:auto;
-padding:50px 20px;
+padding:50px 25px;
 }
 
 .section h2{
@@ -90,30 +98,17 @@ gap:20px;
 }
 
 .card{
-background:#f6f7f9;
+background:white;
 padding:20px;
 border-radius:15px;
-}
-
-.highlight{
-background:#f0f5fb;
-}
-
-.about{
-font-size:1.05rem;
-max-width:800px;
+box-shadow:0 5px 15px rgba(0,0,0,.05);
 }
 
 .footer{
-background:#091c2c;
+background:#0f3d63;
 color:white;
 text-align:center;
-padding:40px 20px;
-}
-
-.footer a{
-color:white;
-text-decoration:none;
+padding:50px 20px;
 }
 
 @media(max-width:800px){
@@ -122,14 +117,13 @@ text-decoration:none;
 grid-template-columns:1fr;
 }
 
-.hero h1{
+.hero-text h1{
 font-size:2.2rem;
 }
 
 }
 
 </style>
-
 </head>
 
 <body>
@@ -138,23 +132,25 @@ font-size:2.2rem;
 
 <div class="hero-inner">
 
-<div>
-<img src="sebastian.jpg" alt="Sebastian McComb">
+<div class="hero-photo">
+<img src="hero.jpg" alt="Sebastian McComb">
 </div>
 
-<div>
+<div class="hero-text">
 
-<h1>
-Sebastian McComb<br>
-Disability Support
-</h1>
+<h1>Sebastian McComb Disability Support</h1>
+
+<h2>
+Psychology-Trained Support Worker
+</h2>
 
 <p>
-Psychology-trained support worker helping young people build confidence, independence and meaningful community connections.
+Supporting young people and adults throughout Newcastle,
+Lake Macquarie, Maitland and the Hunter Region.
 </p>
 
 <p>
-Community Access • Young Men • Autism Support • Capacity Building
+Community Access • Autism Support • Capacity Building • Positive Male Mentoring
 </p>
 
 <a class="btn call" href="tel:0494717861">
@@ -179,29 +175,29 @@ Email Me
 
 <div class="card">
 <strong>Young Men</strong><br>
-Confidence, routine building, social skills and independence.
+Building confidence, independence and routine.
 </div>
 
 <div class="card">
 <strong>Autistic Participants</strong><br>
-Community participation, social confidence and meaningful goals.
+Community access, social confidence and life skills.
 </div>
 
 <div class="card">
 <strong>Intellectual Disability</strong><br>
-Practical support focused on everyday life and independence.
+Practical support focused on everyday life.
 </div>
 
 <div class="card">
 <strong>Positive Male Mentoring</strong><br>
-Reliable support and encouragement from someone in their corner.
+Reliable and encouraging support.
 </div>
 
 </div>
 
 </section>
 
-<section class="section highlight">
+<section class="section">
 
 <h2>What We Can Do Together</h2>
 
@@ -212,9 +208,7 @@ Reliable support and encouragement from someone in their corner.
 <div class="card">Surfing</div>
 <div class="card">Cafes & Social Outings</div>
 <div class="card">Life Skills</div>
-<div class="card">Appointments</div>
 <div class="card">Community Activities</div>
-<div class="card">Confidence Building</div>
 
 </div>
 
@@ -224,25 +218,10 @@ Reliable support and encouragement from someone in their corner.
 
 <h2>About Sebastian</h2>
 
-<div class="about">
-
 <p>
 I hold a Bachelor of Psychological Science and am currently completing further psychology studies.
+My focus is helping participants become more confident, independent and connected to their community through practical, person-centred support.
 </p>
-
-<br>
-
-<p>
-My focus is helping participants become more confident, independent and connected to their community.
-</p>
-
-<br>
-
-<p>
-I particularly enjoy supporting young people who benefit from practical guidance, encouragement and a positive role model.
-</p>
-
-</div>
 
 </section>
 
@@ -261,37 +240,13 @@ I particularly enjoy supporting young people who benefit from practical guidance
 
 </section>
 
-<section class="section highlight">
-
-<h2>Support Coordinators Welcome</h2>
-
-<p>
-Available for referrals across Newcastle, Lake Macquarie, Maitland and the Hunter Region.
-</p>
-
-<br>
-
-<a class="btn email" href="mailto:sebastiansupports@gmail.com">
-Refer a Participant
-</a>
-
-</section>
-
 <footer class="footer">
 
-<h3>Contact</h3>
+<h2>Contact</h2>
 
 <p>0494 717 861</p>
-
-<p>
-<a href="mailto:sebastiansupports@gmail.com">
-sebastiansupports@gmail.com
-</a>
-</p>
-
-<p>
-ABN: 18619256818
-</p>
+<p>sebastiansupports@gmail.com</p>
+<p>ABN: 18619256818</p>
 
 <p>
 Newcastle • Lake Macquarie • Maitland • Hunter Region
@@ -301,4 +256,3 @@ Newcastle • Lake Macquarie • Maitland • Hunter Region
 
 </body>
 </html>
-
