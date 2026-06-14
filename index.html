@@ -1,10 +1,10 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Sebastian McComb Disability Support | Newcastle & Hunter Region</title>
+<title>Sebastian McComb Disability Support</title>
 
 <style>
 
@@ -14,181 +14,101 @@ padding:0;
 box-sizing:border-box;
 }
 
-html{
-scroll-behavior:smooth;
-}
-
 body{
-font-family: "Segoe UI", Arial, sans-serif;
-background:#ffffff;
+font-family:Arial, sans-serif;
 color:#222;
-line-height:1.7;
+line-height:1.6;
 }
 
 .hero{
-height:100vh;
-background:
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-url("hero.jpg");
-background-size:cover;
-background-position:center;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:20px;
+background:#0f3d63;
 color:white;
+padding:50px 20px;
 }
 
-.hero-content{
-max-width:900px;
+.hero-inner{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:320px 1fr;
+gap:40px;
+align-items:center;
+}
+
+.hero img{
+width:100%;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.25);
 }
 
 .hero h1{
-font-size:4rem;
-font-weight:700;
-margin-bottom:20px;
+font-size:3rem;
+line-height:1.1;
+margin-bottom:15px;
 }
 
 .hero p{
-font-size:1.35rem;
-max-width:750px;
-margin:auto;
-margin-bottom:25px;
+font-size:1.15rem;
+margin-bottom:20px;
 }
 
 .btn{
 display:inline-block;
-padding:16px 28px;
-margin:8px;
+padding:14px 24px;
 border-radius:50px;
 text-decoration:none;
-font-weight:600;
-transition:.3s;
+font-weight:bold;
+margin-right:10px;
+margin-top:10px;
 }
 
-.btn-primary{
-background:#0f3d63;
-color:white;
-}
-
-.btn-primary:hover{
-background:#08263f;
-}
-
-.btn-secondary{
+.call{
 background:white;
 color:#0f3d63;
 }
 
-.btn-secondary:hover{
-opacity:.9;
+.email{
+background:#2f6ea8;
+color:white;
 }
 
 .section{
-max-width:1200px;
+max-width:1100px;
 margin:auto;
-padding:90px 25px;
+padding:50px 20px;
 }
 
-.section-title{
-text-align:center;
-font-size:2.4rem;
+.section h2{
+margin-bottom:20px;
 color:#0f3d63;
-margin-bottom:15px;
 }
 
-.section-subtitle{
-text-align:center;
-max-width:750px;
-margin:auto;
-margin-bottom:50px;
-color:#555;
-}
-
-.cards{
+.grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
 }
 
 .card{
-background:white;
-padding:30px;
-border-radius:18px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-}
-
-.card h3{
-margin-bottom:12px;
-color:#0f3d63;
-}
-
-.alt{
-background:#f6f8fb;
-}
-
-.about{
-display:grid;
-grid-template-columns:1fr 1.3fr;
-gap:50px;
-align-items:center;
-}
-
-.about img{
-width:100%;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,.15);
+background:#f6f7f9;
+padding:20px;
+border-radius:15px;
 }
 
 .highlight{
-background:#0f3d63;
-color:white;
-padding:80px 25px;
-text-align:center;
+background:#f0f5fb;
 }
 
-.highlight h2{
-font-size:2.4rem;
-margin-bottom:20px;
-}
-
-.activities{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-gap:15px;
-margin-top:35px;
-}
-
-.activity{
-background:white;
-padding:20px;
-text-align:center;
-border-radius:12px;
-font-weight:600;
-}
-
-.coordinator{
-background:#0f3d63;
-color:white;
-border-radius:20px;
-padding:50px;
-text-align:center;
-}
-
-.coordinator h2{
-margin-bottom:20px;
+.about{
+font-size:1.05rem;
+max-width:800px;
 }
 
 .footer{
 background:#091c2c;
 color:white;
 text-align:center;
-padding:60px 20px;
-}
-
-.footer h2{
-margin-bottom:15px;
+padding:40px 20px;
 }
 
 .footer a{
@@ -196,211 +116,131 @@ color:white;
 text-decoration:none;
 }
 
-@media(max-width:768px){
+@media(max-width:800px){
 
-.hero h1{
-font-size:2.5rem;
-}
-
-.hero p{
-font-size:1.1rem;
-}
-
-.about{
+.hero-inner{
 grid-template-columns:1fr;
 }
 
-.section-title{
-font-size:2rem;
+.hero h1{
+font-size:2.2rem;
 }
 
 }
 
 </style>
+
 </head>
+
 <body>
 
 <section class="hero">
 
-<div class="hero-content">
+<div class="hero-inner">
+
+<div>
+<img src="sebastian.jpg" alt="Sebastian McComb">
+</div>
+
+<div>
 
 <h1>
-Helping Young People Build Confidence, Independence & Community Connection
+Sebastian McComb<br>
+Disability Support
 </h1>
 
 <p>
-Psychology-trained support worker providing community access,
-capacity building and mentoring-style support throughout
-Newcastle, Lake Macquarie, Maitland and the Hunter Region.
+Psychology-trained support worker helping young people build confidence, independence and meaningful community connections.
 </p>
 
-<a class="btn btn-primary" href="tel:0494717861">
+<p>
+Community Access • Young Men • Autism Support • Capacity Building
+</p>
+
+<a class="btn call" href="tel:0494717861">
 Call Sebastian
 </a>
 
-<a class="btn btn-secondary" href="mailto:sebastiansupports@gmail.com">
+<a class="btn email" href="mailto:sebastiansupports@gmail.com">
 Email Me
 </a>
 
 </div>
 
+</div>
+
 </section>
 
 <section class="section">
 
-<h2 class="section-title">Who I Support</h2>
+<h2>Who I Support</h2>
 
-<p class="section-subtitle">
-Every participant is different. My approach is practical,
-person-centred and focused on building confidence,
-independence and meaningful participation in everyday life.
-</p>
-
-<div class="cards">
+<div class="grid">
 
 <div class="card">
-<h3>Young Men</h3>
-<p>
-Supporting young men to build confidence,
-develop routines and engage with the community.
-</p>
+<strong>Young Men</strong><br>
+Confidence, routine building, social skills and independence.
 </div>
 
 <div class="card">
-<h3>Autistic Participants</h3>
-<p>
-Helping participants develop confidence,
-social skills, independence and community connection.
-</p>
+<strong>Autistic Participants</strong><br>
+Community participation, social confidence and meaningful goals.
 </div>
 
 <div class="card">
-<h3>Intellectual Disability</h3>
-<p>
-Practical support focused on daily living,
-community participation and achieving goals.
-</p>
+<strong>Intellectual Disability</strong><br>
+Practical support focused on everyday life and independence.
 </div>
 
 <div class="card">
-<h3>Families Seeking A Positive Role Model</h3>
-<p>
-Reliable, encouraging and mentoring-style support
-for participants working towards greater independence.
-</p>
+<strong>Positive Male Mentoring</strong><br>
+Reliable support and encouragement from someone in their corner.
 </div>
 
 </div>
 
 </section>
 
-<section class="highlight">
+<section class="section highlight">
 
-<h2>What Support Can Look Like</h2>
+<h2>What We Can Do Together</h2>
 
-<p>
-Support should be engaging, enjoyable and meaningful.
-</p>
+<div class="grid">
 
-<div class="activities">
-
-<div class="activity">Gym & Fitness</div>
-<div class="activity">Walking Tracks</div>
-<div class="activity">Surfing</div>
-<div class="activity">Community Access</div>
-<div class="activity">Life Skills</div>
-<div class="activity">Social Outings</div>
-<div class="activity">Appointments</div>
-<div class="activity">Confidence Building</div>
+<div class="card">Gym & Fitness</div>
+<div class="card">Walking Tracks</div>
+<div class="card">Surfing</div>
+<div class="card">Cafes & Social Outings</div>
+<div class="card">Life Skills</div>
+<div class="card">Appointments</div>
+<div class="card">Community Activities</div>
+<div class="card">Confidence Building</div>
 
 </div>
 
 </section>
 
 <section class="section">
+
+<h2>About Sebastian</h2>
 
 <div class="about">
 
-<div>
-<img src="hero.jpg" alt="Sebastian McComb">
-</div>
-
-<div>
-
-<h2 class="section-title" style="text-align:left;">
-About Sebastian
-</h2>
-
 <p>
-Hi, I'm Sebastian.
+I hold a Bachelor of Psychological Science and am currently completing further psychology studies.
 </p>
 
 <br>
 
 <p>
-I hold a Bachelor of Psychological Science and am currently
-completing further psychology studies.
+My focus is helping participants become more confident, independent and connected to their community.
 </p>
 
 <br>
 
 <p>
-My passion is helping people build confidence,
-independence and meaningful connections in their community.
+I particularly enjoy supporting young people who benefit from practical guidance, encouragement and a positive role model.
 </p>
-
-<br>
-
-<p>
-I particularly enjoy supporting young people and participants
-who benefit from practical guidance, encouragement and a
-positive role model.
-</p>
-
-<br>
-
-<p>
-My approach is relaxed, supportive and focused on helping
-participants achieve goals that genuinely matter to them.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="section alt">
-
-<h2 class="section-title">
-Qualifications & Checks
-</h2>
-
-<div class="cards">
-
-<div class="card">
-NDIS Worker Screening Check
-</div>
-
-<div class="card">
-Working With Children Check
-</div>
-
-<div class="card">
-First Aid & CPR
-</div>
-
-<div class="card">
-Bachelor of Psychological Science
-</div>
-
-<div class="card">
-Current Psychology Studies
-</div>
-
-<div class="card">
-ABN: 18619256818
-</div>
 
 </div>
 
@@ -408,45 +248,49 @@ ABN: 18619256818
 
 <section class="section">
 
-<div class="coordinator">
+<h2>Qualifications & Checks</h2>
+
+<div class="grid">
+
+<div class="card">Bachelor of Psychological Science</div>
+<div class="card">NDIS Worker Screening Check</div>
+<div class="card">Working With Children Check</div>
+<div class="card">First Aid & CPR</div>
+
+</div>
+
+</section>
+
+<section class="section highlight">
 
 <h2>Support Coordinators Welcome</h2>
 
 <p>
-Available for referrals throughout Newcastle,
-Lake Macquarie, Maitland and the Hunter Region.
+Available for referrals across Newcastle, Lake Macquarie, Maitland and the Hunter Region.
 </p>
 
 <br>
 
-<p>
-If you're looking for a psychology-trained male support worker
-focused on community access, confidence building,
-capacity building and mentoring-style support,
-I'd love to discuss how I can help.
-</p>
-
-<br>
-
-<a class="btn btn-secondary"
-href="mailto:sebastiansupports@gmail.com">
+<a class="btn email" href="mailto:sebastiansupports@gmail.com">
 Refer a Participant
 </a>
-
-</div>
 
 </section>
 
 <footer class="footer">
 
-<h2>Get In Touch</h2>
+<h3>Contact</h3>
+
+<p>0494 717 861</p>
 
 <p>
-📞 0494 717 861
+<a href="mailto:sebastiansupports@gmail.com">
+sebastiansupports@gmail.com
+</a>
 </p>
 
 <p>
-✉️ sebastiansupports@gmail.com
+ABN: 18619256818
 </p>
 
 <p>
@@ -457,3 +301,4 @@ Newcastle • Lake Macquarie • Maitland • Hunter Region
 
 </body>
 </html>
+
